@@ -26,8 +26,16 @@
     4. Показывайте и скрывайте с помощью свойства display у объекта style.
     -->
 
-    <script>
-        
+   <script>
+        'use strict';
+        let goToTopEl = document.getElementById('goToTop');
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 500) {
+                goToTopEl.style.display = 'block';
+            } else {
+                goToTopEl.style.display = 'none';
+            }
+        });
     </script>
 </body>
 </html>
