@@ -43,8 +43,17 @@
         style
     -->
 
-    <script>
+     <script>
+        'use strict';
+        let products = document.querySelectorAll('.product');
+        products.forEach(function(product) {
+            product.style.background = '#0000FF';
+        });
 
+        let productNames = document.querySelectorAll('.productName');
+        productNames.forEach(function(productName) {
+            productName.style.fontSize = '24px';
+        });
     </script>
 </body>
 </html>
